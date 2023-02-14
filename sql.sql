@@ -29,8 +29,8 @@ CREATE TABLE Annonce(
 );
 
 CREATE TABLE Images(
-   Id_Images COUNTER,
-   is_pricipale LOGICAL NOT NULL,
+   Id_Images int NOT NULL AUTO_INCREMENT,
+   is_pricipale BOOLEAN NOT NULL,
    image_path VARCHAR(50),
    N__d_annonce INT NOT NULL,
    PRIMARY KEY(Id_Images),
